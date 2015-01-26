@@ -1,33 +1,20 @@
 module.exports = function(grunt) {
+  grunt.initConfig({
+    pkg: require('./package.json'),
+  });
 
-    var paths = {
-        src: {
-            bower: 'bower_components',
-            css: 'source/css',
-            fonts: 'source/fonts',
-            js: 'source/js/source'
-        },
-        dest: {
-            css: 'source/css',
-            fonts: 'source/fonts',
-            js: 'source/js',
-            html: 'public/patterns',
-            images: 'source/images',
-            patterns: 'source/_patterns'
-        },
-        app: {
-            css: 'export/css',
-            fonts: 'export/fonts',
-            js: 'export/js',
-            html: 'export/patterns',
-            images: 'export/images'
-        }
-    };
+  grunt.loadTasks('grunt');
 
-    require('load-grunt-config')(grunt, {
-        config: {
-            paths: paths
-        }
-    });
+  grunt.registerTask('dev',
+    'Starting browsersync and watch task.',
+    ['browserSync', 'watch']);
 
-};
+  grunt.registerTask('build-patternlab',
+    ['shell:patternlab']);
+
+  grunt.registerTask('push',
+    ['copy:css', 'copy:js']);
+
+  grunt.registerTask('default',
+    ['uglify', 'compass', 'modernizr', 'shell:patternlab']);
+}

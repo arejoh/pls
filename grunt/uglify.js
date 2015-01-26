@@ -1,10 +1,13 @@
-module.exports = {
+module.exports = function(grunt) {
+  grunt.config('uglify', {
     app: {
-        files: {
-            '<%= paths.dest.js %>/global.js': [
-            	'<%= paths.src.bower %>/jquery/dist/jquery.js',
-                '<%= paths.src.js %>/global.js'
-            ]
-        }
+      files: {
+        'source/js/global.js': [
+          'bower_components/jquery/dist/jquery.js',
+          'source/js/source/global.js'
+        ]
+      }
     }
+  });
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 };
