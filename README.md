@@ -40,6 +40,22 @@ in your terminal. This will install grunt and bower.
 Once the dependencies are met you may run `bin/init` to install other
 dependencies and perform the initial build.
 
+You should now have a Pattern Lab environment with Grunt integration and a
+styleguide containing the base styles of a UiB theme.
+
+## How to use
+
+To start working on the styleguide run `grunt dev` in the root folder
+of your styleguide. This will start the browsersync and watch tasks in
+grunt. If you are on a mac the style guide will open in your default
+browser. The terminal will give you urls for connecting, both local and
+external. This may be useful as you can connect any device to your local
+copy of the style guide.
+
+If you want to make changes to a style in the styleguide, you locate the
+corresponding file in the source directory, edit the file, save and the
+changes will be injected into all connected browsers.
+
 ## Pattern Lab
 
 Information about Pattern Lab can be found at:
