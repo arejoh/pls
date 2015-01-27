@@ -4,3 +4,5 @@ bundle check || bundle install || exit
 
 npm install
 
+mkdir public
+
