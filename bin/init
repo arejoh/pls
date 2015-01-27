@@ -6,8 +6,5 @@ npm install
 
 bower install
 
-mkdir public
-cp -rfv core/styleguide public/styleguide
-
 grunt
 
