@@ -37,7 +37,13 @@ in your terminal. This will install grunt and bower.
 
 ## Setup
 
-Once the dependencies are met you may run `bin/init` to install other
+Once the dependencies are met you may proceed to the setup of the style guide.
+
+1. (if you have not already) grap the code by running
+
+```git clone git@git.uib.no:user/ajo066/uib-base.git```
+
+2. run `bin/init` to install other
 dependencies and perform the initial build.
 
 You should now have a Pattern Lab environment with Grunt integration and a
