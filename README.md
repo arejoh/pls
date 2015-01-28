@@ -53,8 +53,16 @@ external. This may be useful as you can connect any device to your local
 copy of the style guide.
 
 If you want to make changes to a style in the styleguide, you locate the
-corresponding file in the source directory, edit the file, save and the
-changes will be injected into all connected browsers.
+corresponding file in the source directory, edit the file, save and the changes
+will be injected into all connected browsers. Changes to html patterns is made
+to `.mustache` template files in `source/\_patterns`, changes to css is made in
+the `.scss` files in `source/css` and additional graphics or javascripts is put
+in `source/images` or `source/js`.
+
+In `source/\_data` you may enter data in json files to be used in the
+`.mustache` templates.
+
+See Pattern Lab documentation for further information.
 
 ## Pattern Lab
 
@@ -64,4 +72,8 @@ Information about Pattern Lab can be found at:
 - [About Pattern Lab](http://patternlab.io/about.html)
 - [Documentation](http://patternlab.io/docs/index.html)
 - [Demo](http://demo.patternlab.io/)
+
+## Grunt methods
+
+*** TODO ***
 
