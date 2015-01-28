@@ -14,11 +14,11 @@
 		"icon-comment",
 		"icon-shopping-cart",
 		"icon-envelope",
-		"icon-mobile-phone"		
+		"icon-mobile-phone"
 	],
 	"img": {
 		"logo": {
-			"src": "../../images/logo.png",
+			"src": "../../images/uiblogo.svg",
 			"alt": "Logo Alt Text"
 		}
 	},
