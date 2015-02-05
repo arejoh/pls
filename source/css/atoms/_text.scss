@@ -6,12 +6,32 @@ p {
 	font-family: $font-family-primary;
 	color: $color-black;
 	margin: 0 0 1.5em 0;
+  &.lead {
+    font-weight: bold;
+  }
+  blockquote & {
+    font-family: $font-family-secondary;
+    font-size: 1.5em;
+    font-style: italic;
+    position: relative;
+    text-indent: 2.5em;
+    &:before {
+      color: $color-light-grey;
+      content: "\201C";
+      position: absolute;
+      font-size: 4.8em;
+      left: -55px;
+      top: -30px;
+    }
+  }
 }
+
 a {
-    color: $color-link;
+  color: $color-link;
 	font-weight: 400;
 
 	&:hover {
         color: $color-link-hover;
 	}
 }
+

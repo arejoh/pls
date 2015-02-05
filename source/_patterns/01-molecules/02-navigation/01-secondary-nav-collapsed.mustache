@@ -1,0 +1,44 @@
+<nav id="main-menu">
+  <ul class="menu">
+    <li class="menu__item is-expanded first">
+      <a href="#">Utdanning</a>
+      <ul class="menu">
+      {{# listItems.four }}
+        <li><a href="{{ url }}">{{ linktitle }}</a></li>
+      {{/ listItems.four }}
+      </ul>
+    </li>
+    <li class="menu__item is-expanded first">
+      <a href="#">Forskning</a>
+      <ul class="menu">
+      {{# listItems.three }}
+        <li><a href="{{ url }}">{{ linktitle }}</a></li>
+      {{/ listItems.three }}
+      </ul>
+    </li>
+    <li class="menu__item is-expanded first">
+      <a href="#">Ressurser</a>
+      <ul class="menu">
+      {{# listItems.five }}
+        <li><a href="{{ url }}">{{ linktitle }}</a></li>
+      {{/ listItems.five }}
+      </ul>
+    </li>
+    <li class="menu__item is-expanded first">
+      <a href="#">Om fakultetet</a>
+      <ul class="menu">
+      {{# listItems.two }}
+        <li><a href="{{ url }}">{{ linktitle }}</a></li>
+      {{/ listItems.two}}
+      </ul>
+    </li>
+    <li class="menu__item is-expanded first">
+      <a href="#">Kontakt</a>
+      <ul class="menu">
+      {{# listItems.five }}
+        <li><a href="{{ url }}">{{ linktitle }}</a></li>
+      {{/ listItems.five}}
+      </ul>
+    </li>
+  </ul>
+</nav>
