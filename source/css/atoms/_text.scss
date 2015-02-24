@@ -1,5 +1,5 @@
 html {
-    font-size: 75%;
+    font-size: 100%;
     line-height: 1.5;
 }
 p {
@@ -10,7 +10,6 @@ p {
     font-weight: bold;
   }
   blockquote & {
-    font-family: $font-family-secondary;
     font-size: 1.5em;
     font-style: italic;
     position: relative;
@@ -20,12 +19,15 @@ p {
       content: "\201C";
       position: absolute;
       font-size: 4.8em;
-      left: -55px;
-      top: -30px;
+      left: -70px;
+      top: -35px;
     }
   }
 }
-
+blockquote p,
+.field-name-field-uib-kicker {
+  font-family: $font-family-secondary;
+}
 a {
   color: $color-link;
 	font-weight: 400;
